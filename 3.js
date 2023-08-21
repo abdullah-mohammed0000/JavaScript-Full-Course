@@ -21,3 +21,5 @@ console.log(typeof(Number("12")));
 
 console.log(Number("12.5"));
 console.log(typeof(Number("12.5")));
+console.log(Number(false));
+console.log(typeof(false));
