@@ -1,0 +1,8 @@
+document.querySelector("#jqs").innerHTML="shera hobey"
+document.querySelector(".jqs").innerHTML="nervous"
+document.querySelectorAll("p")[0].innerHTML= "ggg"
+document.querySelectorAll("p")[1].innerHTML= "siu"
+document.querySelector("a").innerHTML="Ghor"
+document.querySelectorAll("li a")[0].innerHTML="Ghor"
+document.querySelectorAll("li a")[1].innerHTML="vhor"
+document.querySelector(".mydiv a").innerHTML="chol"
