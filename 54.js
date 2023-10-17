@@ -15,5 +15,5 @@ ctx.beginPath();
 ctx.arc(centerX,centerY,80,0,2*Math.PI,false);
 ctx.fillStyle = "red";
 ctx.fill();
-ctx.stroke()
+ctx.stroke();
 
