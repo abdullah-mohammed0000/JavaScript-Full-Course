@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function display1(){ console.log("I am display1")       }
+const display2 = () => {console.log("I am display2")}
+const display3 = () => console.log("I am display3")//it will work without curly bracket for first statement
+
+display1();
+display2();
+display3();
+
+//return function
+function message()//traditional
+{
+    return "Hi,I am a message";
+}
+
+console.log(message());
+
+let message2 = () => {return "Hi, I am message2"}
+console.log(message2())
+ 
+var message3 = () =>  "Hi, I am message3";
+console.log(message3())
+
+function add(num1,num2)//traditional with parameter
+{
+    return num1+num2;
+}
+
+console.log(add(30,20));
+
+let add2 = (num1,num2) => {return num1+num2}
+console.log(add2(100,200))
+
+let add3 = (num1,num2) => 
+ num1+num2
+
+console.log(add3(500,200))
+
+
+
+//***if you don't use second bracket then never use return keyword
+
+ </script>
+</body>
+</html>
