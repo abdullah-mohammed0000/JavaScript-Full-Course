@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students = [
+
+
+
+        {
+             Name:"Mustafiz",
+             ID:90,
+             CGPA:3.97
+
+        },
+       
+        {
+             Name:"Junak",
+             ID:103,
+             CGPA:3.94
+
+        },
+
+        {
+             Name:"Abdullah",
+             ID:105,
+             CGPA:3.82
+
+        },
+
+        ]
+
+function studentsNames1(){
+  return students.filter(function (x){
+     return x.CGPA > 3.90;
+  }).map(function(y){
+    return y.Name;
+
+  });
+
+}
+
+
+const studentsNames2 = () => {
+    return students.filter((x)=>x.CGPA<3.90).map((y)=>y.Name);
+}
+
+
+console.log(studentsNames2());
+//console.log(studentsNames());
+
+
+
+
+    </script>
+</body>
+</html>

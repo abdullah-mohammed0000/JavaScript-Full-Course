@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array destructure
+let numbers = [10,20,30,40,50];
+let [num1,num2,...z] = numbers;
+console.log(num1);
+console.log(z);
+
+//Swap Variables
+let a=10, b=20;
+[a,b] = [b,a];
+console.log(a,b);
+
+//Object destructure
+
+const studentInfo = {
+    Name: "Abdullah Mohammed",
+    ID:105,
+    CGPA:3.61,
+    language: {
+        Native: 'Bangla',
+        Beginner: 'English'
+    }
+}
+
+const {ID,Name,language} = studentInfo;
+
+console.log(ID)
+console.log(Name)
+console.log(language)
+console.log(language.Native)
+
+//destructuring function parameters
+
+const studentDetails = (stuInfo) =>{
+console.log(`${stuInfo.name}, ${stuInfo.id}`)
+
+}
+
+const stuInfo= {
+    name:'Omi',
+    id:34,
+    cgpa: 2.95
+
+}
+
+console.log(studentDetails(stuInfo))
+
+const studentDetails1 = ({id,name}) =>{
+console.log(`${name}, ${id}`)
+
+}
+
+const stuInfo1= {
+    name:'Alom',
+    id:33,
+    cgpa: 3.10
+
+}
+
+console.log(studentDetails1(stuInfo1))
+
+
+
+    </script>
+</body>
+</html>
