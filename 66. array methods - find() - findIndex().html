@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find(callback,value)
+let numbers = [5,15,14,21,78];
+// let firstEven = numbers.find(x=>x%2===0);
+// console.log(firstEven)
+
+const evenNumber = (value,index,array) => {
+if(value %2 ===0)
+return value;
+}
+const firstEvenNumber = numbers.find(evenNumber);
+const firstEvenNumberIndex = numbers.findIndex(evenNumber);
+console.log(firstEvenNumber);
+console.log(firstEvenNumberIndex)
+
+//find and findIndex with object
+
+var students = [
+
+
+
+{
+     Name:"Mustafiz",
+     ID:90,
+     CGPA:3.97
+
+},
+
+{
+     Name:"Junak",
+     ID:103,
+     CGPA:3.94
+
+},
+
+{
+     Name:"Abdullah",
+     ID:105,
+     CGPA:3.82
+
+},
+
+]
+
+console.log(students.find(x => x.CGPA<3.83));
+console.log(students.findIndex(x => x.CGPA<3.83));
+
+    </script>
+</body>
+</html>
