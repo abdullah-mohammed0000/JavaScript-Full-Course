@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //startswith(searchstring,position) -> check a string starts with another string
+        const message = 'Today is a big match between Bangladesh vs South Africa'
+        console.log(message.startsWith('Today',0)) //it's case sensitive
+
+        //endswith(searchstring,length) -> check a string ends with another string
+
+        const message1 = 'Today is a big match between Bangladesh vs South Africa'
+        console.log(message1.endsWith('Africa')) //it's case sensitive
+
+        //includes(searchstring,position) -> check if a string contains another string
+
+        const message2 = 'Today is a big match between Bangladesh vs South Africa'
+        console.log(message2.includes('icc')) //it's case sensitive
+    </script>
+</body>
+</html>
